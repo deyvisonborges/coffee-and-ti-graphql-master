@@ -1,0 +1,30 @@
+type Query {
+    bookById(id: ID!): Book,
+    bookByName(name: String!): Book,
+    listBooksByName(name: String!): [Book],
+    books : [Book]
+}
+
+type Book {
+    id: ID!
+    name: String!
+    pageCount: Int!
+    price: Float!
+    author: Author!
+    info: Info
+}
+
+type Author {
+    id: ID!
+    firstName: String!
+    lastName: String!
+}
+
+type Info {
+    id: String
+    infoUrl: String
+    previewUrl: String
+    thumbnailUrl: String
+    bibKey: String
+}
+

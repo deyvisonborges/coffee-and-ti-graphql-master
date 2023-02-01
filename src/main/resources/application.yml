@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017
+      database: books
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+    schema:
+      printer:
+        enabled: true
+
+books:
+  openlibrary:
+    url: https://openlibrary.org/api/books?bibkeys=ISBN:ISBN_VALUE&format=json

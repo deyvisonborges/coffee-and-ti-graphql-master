@@ -1,0 +1,4 @@
+{
+  "query" : "{\n  bookById(id: \"5870dfdd-561f-4eee-9839-bc233c776f79\") {\n    id\n    name\n    price\n    pageCount\n     info {\n\t  \tid\n      infoUrl\n      previewUrl\n      thumbnailUrl\n   bibKey\n} author {\n      id\n      firstName\n      lastName\n    }\n  }\n}\n"
+
+}

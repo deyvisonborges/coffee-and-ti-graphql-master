@@ -1,0 +1,107 @@
+http://localhost:8080/graphiql?path=/graphql
+
+
+{
+  bookById(id: "5870dfdd-561f-4eee-9839-bc233c776f79") {
+    id
+    name
+    price
+    pageCount
+    info {
+	  id
+      bibKey
+      infoUrl
+      previewUrl
+      thumbnailUrl
+    }
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}
+
+--------------------------
+
+{
+  bookByName(name: "The adventures of Tom Sawyer") {
+    id
+    name
+    price
+    pageCount
+    info {
+	  id
+      infoUrl
+      previewUrl
+      bibKey
+      thumbnailUrl
+    }
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}
+
+--------------------------
+
+{
+  books  {
+    id
+    name
+    price
+    pageCount
+    author {
+      id
+      firstName
+      lastName
+    }
+
+  }
+}
+
+
+--------------------------
+{
+  books {
+    id
+    name
+    price
+    pageCount
+    author {
+      id
+      firstName
+      lastName
+    }
+    info {
+	  id
+      infoUrl
+      previewUrl
+      thumbnailUrl
+    }
+  }
+}
+
+----------------------------
+
+{
+  listBooksByName(name: "Miller") {
+    id
+    name
+    price
+    pageCount
+    info {
+	  id
+      infoUrl
+      previewUrl
+      thumbnailUrl
+    }
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}
